@@ -15,12 +15,17 @@ img{
 }
 
 /* Header nav*/
+.main-nav{
+  position: fixed;
+  width:100%;
+}
+
 .main_nav_ul{
   list-style-type: none;
   display:flex;
   justify-content: flex-end;
   background-color: #355259;
-  padding:10px;
+  padding:1em;
   margin:0px;
 }
 
@@ -39,14 +44,14 @@ img{
   background-color:#357483;
   display:flex;
   flex-wrap:wrap;
-  height:600px;
+  flex-direction: column;
+  height:50%;
 }
 
 .headshot{
   width:200px;
   height:200px;
-  margin-left:auto;
-  margin-right:auto;
+  margin: 4.2em auto 1em;
 }
 
 .h1_name{
@@ -56,7 +61,7 @@ img{
 
 .about{
   color:#D6F3FA;
-  line-height: 1.4em;
+  line-height: 1.5em;
   display:block;
   margin:0px 0px 0px 0.6em;
   font-weight:300;
@@ -72,16 +77,19 @@ img{
 .contact-links>ul{
   list-style: none;
   display:flex;
-  justify-content:center; 
+  justify-content:space-around; 
   padding:0px;
-  display:block;
-  margin:0px auto;
+  margin:1.5em auto;
 }
 
 .contact-link>a{
   text-decoration: none;
   color:#D6F3FA;
   font-size:18px;
-  margin-right:10px;
-  
 }
+.contact-link img{
+  width:50px;
+  height:50px;
+}
+
+/**/
