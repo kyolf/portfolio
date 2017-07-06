@@ -49,14 +49,15 @@ img{
 }
 
 .headshot{
-  width:200px;
-  height:200px;
+  width:150px;
+  height:150px;
   margin: 4.2em auto 1em;
 }
 
 .h1_name{
   margin: 10px auto;
   color:#D6F3FA;
+  font-size:1.7em;
 }
 
 .about{
@@ -88,8 +89,139 @@ img{
   font-size:18px;
 }
 .contact-link img{
-  width:50px;
-  height:50px;
+  width:25px;
+  height:25px;
 }
 
-/**/
+/*Projects*/
+.work{
+  display:flex;
+  flex-direction: column;
+  background-color:#D6F3FA;
+}
+
+.work_title{
+  color:#357483;
+  text-align:center;
+  margin:0.3em auto;
+  font-size:1.6em;
+  /*border-bottom: 4px #357483 solid;*/
+}
+
+.project{
+  display:flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  padding: 1em 0 0 0;
+}
+
+.project>h3{
+  order:2;
+  color:#357483;
+  margin:0px auto;
+  font-size: 1.4em;
+}
+
+.project>img{
+  order:1;
+  width:150px;
+  height:150px;
+  margin:0px auto 0.3em;
+}
+
+.project-description{
+  order:4;
+  color:#357483;
+  margin: 0px 0 0 2.5%;
+  line-height: 1.4em;
+  font-weight: 300;
+}
+
+.project-stack{
+  order:3;
+  display:flex;
+  justify-content: center;
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+
+.project-stack-item{
+  color:#357483;
+  padding:10px;
+}
+
+.project-stack-item>img{
+  width:25px;
+  height:25px;
+}
+
+.project-links{
+  order:5;
+}
+
+.project-links>ul{
+  display:flex;
+  justify-content: space-around;
+  list-style: none;
+  padding:0;
+  margin:1em;
+}
+
+.project-link>a{
+  color:#357483;
+  text-decoration: none;
+  padding:10px;
+}
+
+/*Contact Me*/
+.contact{
+  background-color:#357483;
+  display:flex;
+  flex-direction: column;
+}
+
+.contact_title{
+  text-align: center;
+  color:#D6F3FA;
+  font-size:1.6em;
+}
+
+.contact_form{
+  display:flex;
+  flex-direction: column;
+}
+
+.contact_form>label{
+  padding:0 0 10px 10px;
+  color:#D6F3FA;
+  font-size: 1em;
+}
+
+.contact_form>input{
+  margin:0 0 10px 10px;
+  width:90%;
+  border-radius:4px;
+  background-color:#D6F3FA;
+  box-shadow:inset 2px 2px 2px 0px #B0C7CD;
+  -webkit-box-shadow:inset 2px 2px 2px 0px #B0C7CD;
+  -moz-box-shadow:inset 2px 2px 2px 0px #B0C7CD;
+}
+
+.contact_form>textarea{
+  margin:0 0 10px 10px;
+  width:90%;
+  border-radius:4px;
+  background-color:#D6F3FA;
+  box-shadow: inset 2px 2px 2px 0px #B0C7CD;
+  -webkit-box-shadow:inset 2px 2px 2px 0px #B0C7CD;
+  -moz-box-shadow:inset 2px 2px 2px 0px #B0C7CD;
+}
+
+.contact_form>input:last-child{
+  width:92%;
+  background-color:aliceblue;
+  box-shadow: none;
+  -webkit-box-shadow:none;
+  -moz-box-shadow:none;
+}
