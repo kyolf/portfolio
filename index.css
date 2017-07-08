@@ -179,6 +179,12 @@ html,body{
   margin:1em;
 }
 
+.project-links>ul>li{
+  border: 1px #357483 solid;
+  border-radius: 6px;
+  padding:10px; 
+}
+
 .project-link>a{
   color:#357483;
   text-decoration: none;
@@ -272,9 +278,13 @@ html,body{
   }
 
   /* projects*/
+  .work>h2{
+    margin: 20px auto;
+  }
+
   .project{
     margin:0 auto;
-    width:70%;
+    width:90%;
   }
 
   .project_info_image{
@@ -301,9 +311,8 @@ html,body{
 
 @media only screen and (min-width:610px){
   /*projects*/
-  .project-description{
-    text-align:center;
-    margin:0;
+  .project{
+    width:70%;
   }
 
   /*contact form*/
@@ -315,7 +324,14 @@ html,body{
 @media only screen and (min-width:820px){
   /*Projects*/
   .project{
-    width:50%;
+    width:65%;
+  }
+}
+
+@media only screen and (min-width:880px){
+  /*Projects*/
+  .project{
+    width:60%;
   }
 }
 
@@ -328,5 +344,23 @@ html,body{
   /*Contact form*/
   .contact_form>label{
     width:500px;
+  }
+}
+
+@media only screen and (min-width:1000px){
+  /*Projects*/
+  .work{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .work>h2{
+    width:100%;
+  }
+
+  .project{
+    width:43%;
+    margin: 0px auto 20px;
   }
 }
