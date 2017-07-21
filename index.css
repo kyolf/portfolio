@@ -267,18 +267,36 @@ html,body{
   display:flex;
   flex-direction: column;
   width:300px;
+  height:400px;
+  margin: 0 auto;
+  color:#D6F3FA;
 }
 
 .contact_title{
   text-align: center;
-  color:#D6F3FA;
-  font-size:1.6em;
+  font-size:1.8em;
 }
 
 .contact_email{
   text-align:center;
-  color:#D6F3FA;
-  font-size:1.4em;
+  font-size:1.2em;
+  margin:0 4% 5px;
+}
+
+.contact_link_or{
+  text-align:center;
+  margin:10px 0;
+  font-size:1em;
+}
+
+.contact_link_description{
+  text-align:center;
+  font-size:1.2em;
+  margin: 5px 4% 0px;
+}
+
+.contact_links{
+  margin-top: 20px;
 }
 
 .contact_links>ul{
@@ -298,57 +316,6 @@ html,body{
 .contact_link img{
   width:25px;
   height:25px;
-}
-
-.contact_link_description{
-  text-align:center;
-  color:#D6F3FA;
-  font-size:1.4em;
-  margin: 0 4%;
-}
-
-.contact_form{
-  display:flex;
-  flex-direction: column;
-  height:360px;
-  margin:0 auto;
-}
-
-.contact_form>label{
-  padding:0 0 0.75em 0.75em;
-  color:#D6F3FA;
-  font-size: 1em;
-  width:300px;
-}
-
-.contact_form>input{
-  margin:0 0 0.75em 0.75em;
-  width:90%;
-  border-radius:4px;
-  background-color:#D6F3FA;
-  box-shadow:inset 2px 2px 2px 0px #B0C7CD;
-  -webkit-box-shadow:inset 2px 2px 2px 0px #B0C7CD;
-  -moz-box-shadow:inset 2px 2px 2px 0px #B0C7CD;
-}
-
-.contact_form>textarea{
-  margin:0 0 3.5em 0.75em;
-  width:90%;
-  height:100px;
-  overflow:auto;
-  border-radius:4px;
-  background-color:#D6F3FA;
-  box-shadow: inset 2px 2px 2px 0px #B0C7CD;
-  -webkit-box-shadow:inset 2px 2px 2px 0px #B0C7CD;
-  -moz-box-shadow:inset 2px 2px 2px 0px #B0C7CD;
-}
-
-.contact_form>input:last-child{
-  width:92%;
-  background-color:aliceblue;
-  box-shadow: none;
-  -webkit-box-shadow:none;
-  -moz-box-shadow:none;
 }
 
 @media only screen and (min-width:383px){
@@ -419,8 +386,8 @@ html,body{
   }
 
   /*contact form*/
-  .contact_form>label{
-    width:400px;
+  .contact_container{
+    width:420px;
   }
 }
 
@@ -442,11 +409,6 @@ html,body{
   /*header intro*/
   .intro{
     width:70%;
-  }
-
-  /*Contact form*/
-  .contact_form>label{
-    width:500px;
   }
 }
 
