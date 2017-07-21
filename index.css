@@ -70,33 +70,8 @@ html,body{
   color:#D6F3FA;
   line-height: 1.5em;
   display:block;
-  margin:0px 2.5%;
+  margin:5px 4%;
   font-weight:300;
-}
-
-.about>a{
-  font-size:18px;
-  color:#D6F3FA;
-  text-decoration: none;
-  font-weight:bold;
-}
-
-.contact-links>ul{
-  list-style: none;
-  display:flex;
-  justify-content:space-around; 
-  padding:0px;
-  margin:1.5em auto;
-}
-
-.contact-link>a{
-  text-decoration: none;
-  color:#D6F3FA;
-  font-size:18px;
-}
-.contact-link img{
-  width:25px;
-  height:25px;
 }
 
 /*Projects*/
@@ -118,6 +93,7 @@ html,body{
   flex-direction: column;
   padding: 1em 0 0 0;
 }
+
 .project_info{
   order:2;
   display:flex;
@@ -144,7 +120,7 @@ html,body{
   margin:0px auto 0.3em;
 }
 
-.project-description{
+.project_description{
   order:3;
   color:#357483;
   margin: 0px 2.5% 0 2.5%;
@@ -152,7 +128,7 @@ html,body{
   font-weight: 300;
 }
 
-.project-stack{
+.project_stack{
   order:2;
   display:flex;
   justify-content: center;
@@ -161,21 +137,100 @@ html,body{
   margin:0;
 }
 
-.project-stack-item{
+.project_stack_item{
   color:#357483;
   padding:10px;
 }
 
-.project-stack-item>img{
+.project_stack_item>img{
   width:25px;
   height:25px;
 }
 
-.project-links{
+.stack_description{
+  font-size:10px;
+  margin:0px;
+  display:none;
+  width:20px;
+}
+
+.project1_html:hover .stack_description{
+  display:block;
+} 
+
+.project1_css:hover .stack_description{
+  display:block;
+}
+
+.project1_react:hover .stack_description{
+  display:block;
+}
+
+.project1_redux:hover .stack_description{
+  display:block;
+}
+
+.project1_nodejs:hover .stack_description{
+  display:block;
+}
+
+.project1_mongodb:hover .stack_description{
+  display:block;
+}
+
+.project2_html:hover .stack_description{
+  display:block;
+} 
+
+.project2_css:hover .stack_description{
+  display:block;
+}
+
+.project2_jQuery:hover .stack_description{
+  display:block;
+} 
+
+.project2_nodejs:hover .stack_description{
+  display:block;
+} 
+
+.project2_mongodb:hover .stack_description{
+  display:block;
+} 
+
+.project3_html:hover .stack_description{
+  display:block;
+}
+
+.project3_css:hover .stack_description{
+  display:block;
+}
+
+.project3_jquery:hover .stack_description{
+  display:block;
+}
+
+.project3_momentjs:hover .stack_description{
+  display:block;
+}
+
+.project4_react:hover .stack_description{
+  display:block;
+}
+
+.project4_redux:hover .stack_description{
+  display:block;
+}
+
+.project4_nodejs:hover .stack_description{
+  display:block;
+}
+
+.project_links{
   order:3;
 }
 
-.project-links>ul{
+.project_links>ul{
   display:flex;
   justify-content: space-around;
   list-style: none;
@@ -183,23 +238,35 @@ html,body{
   margin:1em;
 }
 
-.project-links>ul>li{
+.project_links>ul>li{
   border: 1px #357483 solid;
   border-radius: 6px;
   padding:10px; 
 }
 
-.project-link>a{
+.project_link>a{
   color:#357483;
   text-decoration: none;
   padding:10px;
 }
 
+.project_link_live:hover, .project_link_github:hover{
+  background-color:#357483;
+}
+
+.project_link_live:hover a, .project_link_github:hover a{
+  color:#D6F3FA;
+}
+
 /*Contact Me*/
 .contact{
   background-color:#357483;
+}
+
+.contact_container{
   display:flex;
   flex-direction: column;
+  width:300px;
 }
 
 .contact_title{
@@ -214,10 +281,30 @@ html,body{
   font-size:1.4em;
 }
 
+.contact_links>ul{
+  list-style: none;
+  display:flex;
+  justify-content:space-around; 
+  padding:0px;
+  margin:1.5em auto;
+}
+
+.contact_link>a{
+  text-decoration: none;
+  color:#D6F3FA;
+  font-size:18px;
+}
+
+.contact_link img{
+  width:25px;
+  height:25px;
+}
+
 .contact_link_description{
   text-align:center;
   color:#D6F3FA;
   font-size:1.4em;
+  margin: 0 4%;
 }
 
 .contact_form{
@@ -266,7 +353,7 @@ html,body{
 
 @media only screen and (min-width:383px){
   /*Projects*/
-  .project-description{
+  .project_description{
     text-align: center;
   }
 }
@@ -319,7 +406,7 @@ html,body{
     width:64%;
   }
 
-  .project-description{
+  .project_description{
     margin: 0px 5% 0 5%;
     text-align:left;
   }
