@@ -45,6 +45,10 @@ html,body{
   flex-direction: column;
 }
 
+.circle_headshot{
+  border-radius:50%;
+}
+
 .headshot{
   width:150px;
   height:150px;
