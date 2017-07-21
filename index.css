@@ -208,6 +208,18 @@ html,body{
   font-size:1.6em;
 }
 
+.contact_email{
+  text-align:center;
+  color:#D6F3FA;
+  font-size:1.4em;
+}
+
+.contact_link_description{
+  text-align:center;
+  color:#D6F3FA;
+  font-size:1.4em;
+}
+
 .contact_form{
   display:flex;
   flex-direction: column;
