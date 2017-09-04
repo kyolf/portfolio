@@ -255,7 +255,11 @@ html,body{
   display:block;
 }
 
-.project2_jQuery:hover .stack_description{
+.project2_react:hover .stack_description{
+  display:block;
+} 
+
+.project2_redux:hover .stack_description{
   display:block;
 } 
 
@@ -342,7 +346,7 @@ html,body{
 .contact{
   /* background-color:#357483; */
   background: linear-gradient(135deg, #000033,60%,#0000ff,89%,#b2b2ff);
-  height: 36em;
+  /* height: 36em; */
   padding: 70px 0;
 }
 
@@ -401,7 +405,24 @@ html,body{
   height:25px;
 }
 
+.top_link{
+  margin: 20px auto;
+  color: #D6F3FA;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+@media only screen and (min-width:360px){
+  .contact{
+    height: 30em;
+    padding: 100px 0;
+  }
+}
+
 @media only screen and (min-width:383px){
+  .about_me_background{
+    height:41em;
+  }
   /*Projects*/
   .project_description{
     text-align: center;
