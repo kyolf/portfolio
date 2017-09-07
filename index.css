@@ -2,7 +2,8 @@ html,body{
   width:100%;
   font-family: 'Roboto', sans-serif;
 }
-
+/* #143A45
+#0c576d */
 .main_container{
   display:flex;
   flex-direction:column;
@@ -20,7 +21,7 @@ html,body{
   list-style-type: none;
   display:flex;
   justify-content: flex-end;
-  background-color: #FFF;
+  background-color: #143A45;
   padding:1em;
   margin:0px;
 }
@@ -31,15 +32,16 @@ html,body{
 
 .main-nav-link>a{
   text-decoration: none;
-  color:#355259;
+  /* color:#355259; */
+  color:#FFF;
   font-size:18px;
 }
 
 /* Intro */
 .intro_background{
   padding: 80px 0 50px;
-  background-color: #E9E9E9;
-  color: #355259;
+  background-color: #FFF;
+  color: #000;
 }
 
 .h1_intro{
@@ -126,12 +128,11 @@ html,body{
 }
 
 .about{
-  color:#D6F3FA;
+  color:#FFF;
   line-height: 1.5em;
   display:block;
-  margin:5px 4%;
-  font-weight:300;
-  text-align: center;
+  margin:2.5% 5%;
+  font-weight:400;
 }
 
 /*Projects*/
@@ -140,7 +141,7 @@ html,body{
   flex-direction: column;
   /* background-color:#D6F3FA; */
   background-color:#FFFFFF;
-  color:#355259;
+  /* color:#355259; */
   padding: 70px 0;
 }
 
@@ -194,7 +195,7 @@ html,body{
   /* color:#357483; */
   margin: 10px 2.5%;
   line-height: 1.4em;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .project_stack{
@@ -312,7 +313,8 @@ html,body{
 }
 
 .project_links>ul>li{
-  border: 1px #357483 solid;
+  /* border: 1px #357483 solid; */
+  background-color: #355259;
   border-radius: 6px;
   padding:10px;
   margin: 0em auto; 
@@ -330,6 +332,7 @@ html,body{
   /* color:#357483; */
   text-decoration: none;
   padding:10px;
+  color: #FFF;
 }
 
 .project_link_live:hover, .project_link_github:hover{
@@ -345,8 +348,9 @@ html,body{
 /*Contact Me*/
 .contact{
   /* background-color:#357483; */
-  background: linear-gradient(135deg, #000033,60%,#0000ff,89%,#b2b2ff);
+  /* background: linear-gradient(135deg, #000033,60%,#0000ff,89%,#b2b2ff); */
   /* height: 36em; */
+  background: #0c576d;
   padding: 70px 0;
 }
 
@@ -413,6 +417,10 @@ html,body{
 }
 
 @media only screen and (min-width:360px){
+  .project_description{
+    line-height: 1.5em;
+    font-size: 1.1em;
+  }
   .contact{
     height: 30em;
     padding: 100px 0;
@@ -423,32 +431,57 @@ html,body{
   .about_me_background{
     height:41em;
   }
-  /*Projects*/
-  .project_description{
-    text-align: center;
+  .about{
+    font-size:1.1em;
+    margin: 3.5% 5%;
   }
+  /*Projects*/
+  /* .project_description{
+    text-align: center;
+  } */
 }
+
+@media only screen and (min-width:400px){
+    .empty{
+      display:block;
+    }
+    .about{
+      font-size: 1.2em;
+    }
+  }
+  
+@media only screen and (min-width:500px){
+    .empty{
+      display:none;
+    }
+  }
 
 @media only screen and (min-width:576px){
   /*header intro*/
   .about_container{
-    flex-direction:row;
-    align-items:flex-start;
-    padding: 100px 0 25px;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 50px 0 25px;
     flex-wrap: nowrap;
-    margin:0 auto;
-    width:90%;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .about{
+    margin: 1.5% 5%;
+    font-size: 1.4em;
   }
 
   .headshot{
     width:200px;
     height:200px;
-    margin:1em 1em;
+    margin:1em auto;
 
   }
 
   .h1_name{
     margin: 0 auto;
+    font-size: 2.3em;
   }
 
   /* projects*/
@@ -482,17 +515,6 @@ html,body{
     text-align:left;
   }
 }
-@media only screen and (min-width:400px){
-  .empty{
-    display:block;
-  }
-}
-
-@media only screen and (min-width:500px){
-  .empty{
-    display:none;
-  }
-}
 
 @media only screen and (min-width:610px){
   /*projects*/
@@ -503,6 +525,12 @@ html,body{
   /*contact form*/
   .contact_container{
     width:420px;
+  }
+}
+
+@media only screen and (min-width:650px){
+  .about{
+    font-size: 1.5em;
   }
 }
 
@@ -525,7 +553,7 @@ html,body{
   .about_container{
     width:80%;
     /* margin: 0 auto; */
-    padding: 200px 0;
+    /* padding: 200px 0; */
     height: 15em;
   }
 }
