@@ -517,6 +517,11 @@ html,body{
 }
 
 @media only screen and (min-width:610px){
+  .skills_container{
+    margin: 0 auto;
+    width: 583px;
+  }
+  
   /*projects*/
   .project{
     width:70%;
@@ -572,5 +577,11 @@ html,body{
 
   .project{
     margin: 0px auto 20px;
+  }
+}
+
+@media only screen and (min-width:1020px){
+  .skills_container{
+    width: initial;
   }
 }
