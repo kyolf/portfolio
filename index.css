@@ -634,10 +634,6 @@ html,body{
 
 @media only screen and (min-width:820px){
   /*Projects*/
-  .project{
-    width:65%;
-  }
-  
   .project_info_image{
     flex-direction:row;
     flex-wrap:nowrap;
