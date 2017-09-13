@@ -178,16 +178,21 @@ html,body{
 
 .project_info_image{
   display:flex;
-  flex-direction: column;
+  flex-direction:column;
   flex-wrap:wrap;
   margin: 10px;
 }
 
 .project_info_image>img{
   order:1;
-  width:200px;
+  width:250px;
   height:200px;
+  border:1px solid black;
   margin:0px auto 0.3em;
+}
+
+.tick_it_pic{
+  height: 300px !important;
 }
 
 .project_description{
@@ -314,10 +319,54 @@ html,body{
 
 .project_links>ul>li{
   /* border: 1px #357483 solid; */
-  background-color: #355259;
   border-radius: 6px;
   padding:10px;
   margin: 0em auto; 
+}
+
+.wasteland_bg{
+  background-color: #140646;
+}
+
+.wasteland{
+  color:#140646;
+}
+.yinelemek_bg{
+  background-color:#f44336;
+}
+
+.yinelemek{
+  color:#f44336;
+}
+
+.tick_it_bg{
+  background-color:#5bc0be;
+}
+
+.tick_it{
+  color:#5bc0be;
+}
+
+.weather_bg{
+  background-color: #2b4839;
+}
+
+.weather{
+  color: #2b4839;
+}
+
+.sf_crime_bg{
+  background-color: #337ab7;
+}
+
+.sf_crime{
+  color:#337ab7;
+}
+
+.project_links>ul>li:hover{
+  box-shadow: 5px 5px 5px #888888;
+  -webkit-box-shadow: 5px 5px 5px #888888;
+  -moz-box-shadow: 5px 5px 5px #888888;
 }
 
 .project_links>ul>.project_link_live{
