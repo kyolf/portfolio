@@ -90,7 +90,7 @@ html,body{
   /* background: linear-gradient(135deg, #000033,60%,#0000ff,89%,#b2b2ff); */
   background-color: #355259;
   /* height: 40em;  */
-  height: 36em;
+  /* height: 36em; */
 }
 .about_me_container{
   display: flex;
@@ -142,14 +142,14 @@ html,body{
   /* background-color:#D6F3FA; */
   background-color:#FFFFFF;
   /* color:#355259; */
-  padding: 70px 0;
+  padding: 70px 0 0;
 }
 
 .work_title{
   /* color:#357483; */
   text-align:center;
   margin:20px auto;
-  font-size:1.6em;
+  font-size:1.7em;
   width:300px;
   /* padding: 10px 0; */
   /* border-bottom: 1px black solid; */
@@ -180,13 +180,13 @@ html,body{
   display:flex;
   flex-direction:column;
   flex-wrap:wrap;
-  margin: 10px;
+  margin: 10px 10px 50px;
 }
 
 .project_info_image>img{
   order:1;
   width:250px;
-  height:200px;
+  height:150px;
   border:1px solid black;
   margin:0px auto 0.3em;
 }
@@ -394,6 +394,23 @@ html,body{
   color:#FFFFFF;
 }
 
+.open_source{
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+  padding: 10px 0 20px;
+}
+
+.open_title{
+  /* color:#357483; */
+  text-align:center;
+  margin:20px auto;
+  font-size:1.7em;
+  /* padding: 10px 0; */
+  /* border-bottom: 1px black solid; */
+}
+
+
 /*Contact Me*/
 .contact{
   /* background-color:#357483; */
@@ -470,8 +487,9 @@ html,body{
     line-height: 1.5em;
     font-size: 1.1em;
   }
+
   .contact{
-    height: 30em;
+    /* height: 30em; */
     padding: 100px 0;
   }
 }
@@ -480,6 +498,7 @@ html,body{
   .about_me_background{
     height:41em;
   }
+
   .about{
     font-size:1.1em;
     margin: 3.5% 5%;
@@ -491,22 +510,42 @@ html,body{
 }
 
 @media only screen and (min-width:400px){
-    .empty{
-      display:block;
-    }
-    .about{
-      font-size: 1.2em;
-    }
+  .empty{
+    display:block;
   }
+
+  .about{
+    font-size: 1.2em;
+  }
+}
   
 @media only screen and (min-width:500px){
-    .empty{
-      display:none;
-    }
+  .project_info_image>img{
+    width:350px;
+    height:250px;
   }
+
+  .tick_it_pic{
+    height: 400px !important;
+  }
+
+  .project_info>h3{
+    font-size:1.6em;
+  }
+}
+
+@media only screen and (min-width:517px){
+  .empty{
+    display:none;
+  }
+}
 
 @media only screen and (min-width:576px){
   /*header intro*/
+  .about_me_background{
+    height:44em;
+  }
+
   .about_container{
     flex-direction: row;
     align-items: flex-start;
@@ -529,13 +568,17 @@ html,body{
   }
 
   .h1_name{
-    margin: 0 auto;
-    font-size: 2.3em;
+    margin:0 auto;
+    font-size:2.3em;
   }
 
   /* projects*/
+  .work_title{
+    font-size:2.3em;
+  }
+  
   .work>h2{
-    margin: 20px auto;
+    margin:20px auto;
   }
 
   .project{
@@ -543,25 +586,26 @@ html,body{
     width:90%;
   }
 
-  .project_info_image{
-    flex-direction:row;
-    flex-wrap:nowrap;
-    margin:0 0 0 2.5%;
-  }
-
-  .project_info_image>img{
-    margin:0;
-    width:200px;
+  /* .project_info_image>img{
+    width:300px;
     height:200px;
   }
 
+  .tick_it_pic{
+    height: 350px !important;
+  } */
+
   .project_info{
-    width:64%;
+    margin: 0 auto;
   }
 
   .project_description{
     margin: 0px 5% 0 5%;
     text-align:left;
+  }
+
+  .open_title{
+    font-size:2.3em;
   }
 }
 
@@ -572,9 +616,9 @@ html,body{
   }
   
   /*projects*/
-  .project{
+  /* .project{
     width:70%;
-  }
+  } */
 
   /*contact form*/
   .contact_container{
@@ -592,6 +636,12 @@ html,body{
   /*Projects*/
   .project{
     width:65%;
+  }
+  
+  .project_info_image{
+    flex-direction:row;
+    flex-wrap:nowrap;
+    margin:0 0 0 2.5%;
   }
 }
 
