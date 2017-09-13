@@ -578,7 +578,7 @@ html,body{
   }
   
   .work>h2{
-    margin:20px auto;
+    margin:20px auto 40px;
   }
 
   .project{
@@ -630,22 +630,30 @@ html,body{
   .about{
     font-size: 1.5em;
   }
+
+  .work>h2{
+    margin:20px auto 60px;
+  }
 }
 
 @media only screen and (min-width:820px){
   /*Projects*/
+  .project{
+    width: 100%;
+  }
+
   .project_info_image{
     flex-direction:row;
     flex-wrap:nowrap;
-    margin:0 0 0 2.5%;
+    margin:0 0 60px 2.5%;
   }
 }
 
 @media only screen and (min-width:880px){
   /*Projects*/
-  .project{
+  /* .project{
     width:80%;
-  }
+  } */
 }
 
 @media only screen and (min-width:900px){
