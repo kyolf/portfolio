@@ -96,6 +96,7 @@ html,body{
   display: flex;
   flex-direction: column;
   padding: 70px 0 70px;
+  text-align: justify;
 }
 
 .about_container{
@@ -201,6 +202,7 @@ html,body{
   margin: 10px 2.5%;
   line-height: 1.4em;
   font-weight: 400;
+  text-align: justify;
 }
 
 .project_stack{
@@ -612,7 +614,8 @@ html,body{
 
   .project_description{
     margin: 0px 5% 0 5%;
-    text-align:left;
+    /* text-align:left; */
+    max-width:650px;
   }
 
   .open_title{
@@ -662,7 +665,7 @@ html,body{
     width: 100%;
   }
 
-  .project_info_image{
+  /* .project_info_image{
     flex-direction:row;
     flex-wrap:nowrap;
     margin:0 0 60px 2.5%;
@@ -691,7 +694,7 @@ html,body{
 
   .project_links>ul>li{
     margin: 0 10px;
-  }
+  } */
 
   /* Contact */
   .contact_container{
@@ -742,20 +745,47 @@ html,body{
 @media only screen and (min-width:1000px){
   /*Projects*/
   .project{
-    margin: 0px auto 20px;
+    margin:0px auto 20px;
   }
 
   .project_info{
-    width:500px;
+    width:40%;
+    margin:auto 5%;
   }
 
+  /* .project_info_image>img{
+    width:400px;
+    height:300px;
+  } */
+
   .project_info_image{
-    margin:0 0 60px 2.5%;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    /* margin:0 0 60px 3.5%; */
+    margin:0 auto 60px;
+    /* margin: 0 20% 0 auto; */
   }
 
   .project_info_image>img{
     width:400px;
     height:300px;
+    margin:0 auto 0 5%;
+  }
+
+  .project_stack{
+    justify-content:initial;
+  }
+
+  .project_info>h3{
+    margin:10px;
+  }
+
+  .project_description{
+    margin:10px;
+  }
+
+  .project_links>ul>li{
+    margin: 0 10px;
   }
 
   .tick_it_pic{
@@ -768,7 +798,27 @@ html,body{
     width: initial;
   }
 
+  /* .project_info{
+    margin:auto 0 auto 5%
+  } */
+}
+
+@media only screen and (min-width:1070px){
+  .project_info{
+    margin:auto 0 auto 5%
+  }  
+}
+
+@media only screen and (min-width:1200px){
+  .project_info{
+    width:50%;
+  }
+
   .project_info_image{
-    margin:0 auto 60px;
+    width: 90%;
+  }
+
+  .project_info_image>img{
+    margin: 0 20% 0 2%;
   }
 }
