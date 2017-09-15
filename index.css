@@ -422,17 +422,20 @@ html,body{
 }
 
 @media only screen and (min-width:360px){
+  /* Project */
   .project_description{
     line-height: 1.5em;
     font-size: 1.1em;
   }
 
+  /* Contact */
   .contact{
     padding: 100px 0;
   }
 }
 
 @media only screen and (min-width:383px){
+  /* About */
   .about_me_background{
     height:41em;
   }
@@ -444,6 +447,7 @@ html,body{
 }
 
 @media only screen and (min-width:400px){
+  /* About */
   .empty{
     display:block;
   }
@@ -454,13 +458,31 @@ html,body{
 }
   
 @media only screen and (min-width:500px){
+  /* Projects */
   .project_info_image>img{
     width:350px;
     height:250px;
+    margin: 0px auto 1em;
   }
 
   .project_info>h3{
     font-size:1.6em;
+  }
+
+  .project_stack_item{
+    width: 50px;
+  }
+
+  .project_stack_item>img{
+    width:35px;
+    height:35px;
+    margin: 0 7px;
+  }
+
+  .stack_description{
+    margin:0 auto;
+    width:initial;
+    text-align: center;
   }
 }
 
@@ -517,11 +539,11 @@ html,body{
   }
 
   .project_info{
-    margin: 0 auto;
+    margin:0 auto;
   }
 
   .project_description{
-    margin: 0px 5% 0 5%;
+    margin:15px 5%;
     max-width:650px;
   }
 
@@ -624,6 +646,10 @@ html,body{
     margin:auto 5%;
   }
 
+  .project_info>h3{
+    margin:0 10px 10px;
+  }
+
   .project_info_image{
     flex-direction:row;
     flex-wrap:nowrap;
@@ -638,10 +664,6 @@ html,body{
 
   .project_stack{
     justify-content:initial;
-  }
-
-  .project_info>h3{
-    margin:10px;
   }
 
   .project_description{
