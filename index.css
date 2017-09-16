@@ -116,7 +116,8 @@ html,body{
 }
 
 .h1_name{
-  margin: 20px auto;
+  margin:20px auto;
+  text-align:center;
   color:#b9efff;
   font-size:1.7em;
 }
