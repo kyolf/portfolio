@@ -633,6 +633,7 @@ html,body{
 
   .project_info>h3{
     margin:0 10px 10px;
+    text-align: left;
   }
 
   .project_info_image{
