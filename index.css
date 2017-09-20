@@ -45,8 +45,8 @@ html,body{
 }
 
 .h1_intro{
-  margin: 10px auto;
-  font-size:1.7em;
+  margin:10px auto 20px;
+  font-size:1.4em;
   text-align:center;
 }
 
@@ -91,7 +91,13 @@ html,body{
   display: flex;
   flex-direction: column;
   padding: 70px 0 70px;
-  text-align: justify;
+  /* text-align: justify; */
+}
+
+.image_container{
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
 }
 
 .about_container{
@@ -119,7 +125,7 @@ html,body{
   margin:20px auto;
   text-align:center;
   color:#b9efff;
-  font-size:1.7em;
+  font-size:1.9em;
 }
 
 .about{
@@ -141,7 +147,7 @@ html,body{
 .work_title{
   text-align:center;
   margin:20px auto;
-  font-size:1.7em;
+  font-size:1.9em;
   width:300px;
 }
 
@@ -198,6 +204,7 @@ html,body{
 
 .project_stack_item{
   padding:10px;
+  height: 30px;
 }
 
 .project_stack_item>img{
@@ -325,7 +332,7 @@ html,body{
 .open_title{
   text-align:center;
   margin:20px auto;
-  font-size:1.7em;
+  font-size:1.9em;
 }
 
 /*Contact Me*/
@@ -388,15 +395,35 @@ html,body{
   margin:1.5em auto;
 }
 
+.contact_link{
+  width: 70px;
+  height: 50px;
+}
+
 .contact_link>a{
   text-decoration: none;
-  color:#D6F3FA;
+  color:#FFF;
   font-size:18px;
+}
+
+.contact_link>a:hover .link_hide{
+  display:block;
 }
 
 .contact_link img{
   width:25px;
   height:25px;
+  margin: 0 22.5px;
+}
+
+.link_hide{
+  display:none;
+  text-align: center;
+  margin: 5px 0 0;
+}
+
+.hide_small{
+  display: none !important;
 }
 
 .top_link{
@@ -421,9 +448,9 @@ html,body{
 
 @media only screen and (min-width:383px){
   /* About */
-  .about_me_background{
+  /* .about_me_background{
     height:41em;
-  }
+  } */
 
   .about{
     font-size:1.1em;
@@ -456,6 +483,7 @@ html,body{
 
   .project_stack_item{
     width: 50px;
+    height: 45px;
   }
 
   .project_stack_item>img{
@@ -479,9 +507,9 @@ html,body{
 
 @media only screen and (min-width:576px){
   /*header intro*/
-  .about_me_background{
+  /* .about_me_background{
     height:44em;
-  }
+  } */
 
   .about_container{
     flex-direction: row;
@@ -507,6 +535,14 @@ html,body{
   .h1_name{
     margin:0 auto;
     font-size:2.3em;
+  }
+
+  .hide_small{
+    display: block !important;
+  }
+
+  .hide_big{
+    display: none !important;
   }
 
   /* projects*/
@@ -609,7 +645,7 @@ html,body{
   /*header intro*/
   .about_container{
     width:80%;
-    height: 15em;
+    height:15em;
   }
 }
 
