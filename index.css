@@ -730,6 +730,12 @@ html,body{
   }  
 }
 
+@media only screen and (min-width: 1100){
+  .about{
+    font-size: 1.6em;
+  }
+}
+
 @media only screen and (min-width: 1200px){
   /* About */
   .about_container{
@@ -804,6 +810,6 @@ html,body{
 
 @media only screen and (min-width: 1300px) {
   .about{
-    font-size: 1.6em;
+    font-size: 1.7em;
   }
 }
