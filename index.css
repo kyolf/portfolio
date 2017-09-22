@@ -12,7 +12,7 @@ html,body{
 }
 
 /* Header nav*/
-.main-nav{
+.main_nav{
   position: fixed;
   width: 100%;
   /* border-bottom: 2px black solid; */
@@ -27,18 +27,22 @@ html,body{
   margin: 0px;
 }
 
-.main-nav-link{
+.main_nav_link{
   margin-right: 1rem;
 }
 
-.main-nav-link>a{
+.main_nav_link:last-child{
+  margin-right: 0;
+}
+
+.main_nav_link>a{
   text-decoration: none;
   /* color:#355259; */
   color: #FFF;
   font-size:18px;
 }
 
-.main-nav-link>a:hover{
+.main_nav_link>a:hover{
   color: #b9efff;
 }
 
@@ -426,10 +430,16 @@ html,body{
 }
 
 @media only screen and (min-width: 383px){
+  /* Nav */
+  .main_nav_link:last-child{
+    margin-right: 0.5rem;
+  }
+
   /* About */
   .about{
     margin: 3.5% 5%;
   }
+  
 }
 
 @media only screen and (min-width: 400px){
@@ -440,6 +450,11 @@ html,body{
 }
   
 @media only screen and (min-width: 500px){
+  /* Nav */
+  .main_nav_link:last-child{
+    margin-right: 1rem;
+  }
+    
   /* About */
   .about_me_container{
     padding: 70px 0;
@@ -480,8 +495,12 @@ html,body{
 
 @media only screen and (min-width: 576px){
   /* Nav */
-  .main-nav-link>a{
+  .main_nav_link>a{
     padding: 10px;
+  }
+
+  .main_nav_link:last-child{
+    margin-right: 2rem;
   }
 
   /*header intro*/
@@ -566,10 +585,17 @@ html,body{
 }
 
 @media only screen and (min-width: 650px){
+  /* Nav */
+  .main_nav_link:last-child{
+    margin-right: 3rem;
+  }
+  
+  /* About */
   .about{
     font-size: 1.5rem;
   }
 
+  /* Projects */
   .work>h2{
     margin: 20px auto 60px;
   }
@@ -582,7 +608,7 @@ html,body{
 
 @media only screen and (min-width: 820px){
   /* Nav */
-  .main-nav-link>a{
+  .main_nav_link>a{
     font-size: 20px;
   }
 
