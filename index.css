@@ -1,7 +1,7 @@
 html,body{
   width: 100%;
   font-family: 'Dosis', Sans-Serif;
-  
+  font-size:16px;
 }
 /* #143A45
 #0c576d */
@@ -15,7 +15,7 @@ html,body{
 .main-nav{
   position: fixed;
   width: 100%;
-  border-bottom: 2px black solid;
+  /* border-bottom: 2px black solid; */
 }
 
 .main_nav_ul{
@@ -23,12 +23,12 @@ html,body{
   display: flex;
   justify-content: flex-end;
   background-color: #143A45;
-  padding: 1em;
+  padding: 1rem;
   margin: 0px;
 }
 
 .main-nav-link{
-  margin-right: 1em;
+  margin-right: 1rem;
 }
 
 .main-nav-link>a{
@@ -38,47 +38,16 @@ html,body{
   font-size:18px;
 }
 
-/* Intro */
-.intro_background{
-  padding: 80px 0 50px;
-  background-color: #FFF;
-  color: #000;
+.main-nav-link>a:hover{
+  color: #b9efff;
 }
 
+/* Intro */
 .h1_intro{
-  margin: 10px auto 20px;
-  font-size: 1.5em;
+  margin: 0 auto 20px;
+  font-size: 3rem;
   text-align: center;
   font-family: 'Titillium Web', Sans-Serif;
-}
-
-.intro_container{
-  display: flex;
-  flex-direction: column;
-}
-
-.skills_container{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.skill_container{
-  width: 100px;
-  margin: 10px 0;
-}
-
-.skill{
-  margin: 10px 0;
-  text-align: center;
-}
-
-.skill_img{
-  display: block;
-  width: 50px;
-  height: 50px;
-  margin: 0 auto;
 }
 
 .empty{
@@ -89,11 +58,11 @@ html,body{
 .about_me_background{
   background-color: #355259;
 }
+
 .about_me_container{
   display: flex;
   flex-direction: column;
-  padding: 70px 0 70px;
-  /* text-align: justify; */
+  padding: 70px 0 30px;
 }
 
 .image_container{
@@ -115,7 +84,7 @@ html,body{
 .headshot{
   width: 150px;
   height: 150px;
-  margin: 0 auto 1em;
+  margin: 0 auto 1rem;
 }
 
 .intro_about{
@@ -124,10 +93,10 @@ html,body{
 }
 
 .h1_name{
-  margin: 20px auto;
+  margin: 20px auto 10px;
   text-align: center;
   color: #b9efff;
-  font-size: 2.1em;
+  font-size: 2.1rem;
   font-family: 'Titillium Web', Sans-Serif;
 }
 
@@ -137,6 +106,10 @@ html,body{
   font-size: 18px;
   display: block;
   margin: 2.5% 5%;
+}
+
+.about:last-child{
+  margin-bottom: 35px;
 }
 
 /*Projects*/
@@ -150,7 +123,7 @@ html,body{
 .work_title{
   text-align: center;
   margin: 20px auto;
-  font-size: 2.1em;
+  font-size: 2.1rem;
   width: 300px;
   font-family: 'Titillium Web', Sans-Serif;
 }
@@ -158,7 +131,7 @@ html,body{
 .project{
   display: flex;
   flex-direction: column;
-  padding: 1em 0 0 0;
+  padding: 1rem 0 0 0;
 }
 
 .project_info{
@@ -170,7 +143,7 @@ html,body{
 .project_info>h3{
   order: 1;
   margin: 10px auto;
-  font-size: 1.4em;
+  font-size: 1.4rem;
   text-align: center;
   font-family: 'Titillium Web', Sans-Serif;
 }
@@ -187,14 +160,14 @@ html,body{
   width: 250px;
   height: 150px;
   border: 1px solid black;
-  margin: 0px auto 0.3em;
+  margin: 0px auto 0.3rem;
 }
 
 .project_description{
   order: 3;
   margin: 10px 2.5%;
   line-height: 1.4em;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   text-align: justify;
 }
 
@@ -257,7 +230,7 @@ html,body{
 .project_links>ul>li{
   border-radius: 6px;
   padding: 10px;
-  margin: 0em auto; 
+  margin: 0 auto; 
 }
 
 .wasteland_bg{
@@ -338,7 +311,7 @@ html,body{
   font-family: 'Titillium Web', Sans-Serif;
   text-align: center;
   margin: 20px auto;
-  font-size: 2.1em;
+  font-size: 2.1rem;
 }
 
 /*Contact Me*/
@@ -357,14 +330,14 @@ html,body{
 
 .contact_title{
   text-align: center;
-  font-size: 2.1em;
+  font-size: 2.1rem;
   color: #b9efff;
   font-family: 'Titillium Web', Sans-Serif;
 }
 
 .contact_email{
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1.4rem;
   margin: 0 4%;
 }
 
@@ -376,13 +349,13 @@ html,body{
 .contact_link_or{
   text-align: center;
   margin: 15px 0;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 .contact_link_description{
   text-align: center;
-  font-size: 1.4em;
-  margin: 0 7%;
+  font-size: 1.4rem;
+  margin: 0 7% 40px;
 }
 
 .contact_link_description>span{
@@ -391,7 +364,7 @@ html,body{
 
 .contact_links{
   width: 300px;
-  margin: 20px auto;
+  margin: 10px auto 30px;
 }
 
 .contact_links>ul{
@@ -399,7 +372,7 @@ html,body{
   display: flex;
   justify-content: space-around; 
   padding: 0px;
-  margin: 1.5em auto;
+  margin: 0 auto;
 }
 
 .contact_link{
@@ -436,7 +409,7 @@ html,body{
 .top_link{
   margin: 0 auto;
   color: #b9efff;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   text-decoration: none;
 }
 
@@ -461,25 +434,30 @@ html,body{
 
 @media only screen and (min-width: 400px){
   /* About */
-  .empty{
-    display: block;
-  }
-
   .about{
-    font-size: 1.2em;
+    font-size: 1.2rem;
   }
 }
   
 @media only screen and (min-width: 500px){
+  /* About */
+  .about_me_container{
+    padding: 70px 0;
+  }
+  
+  .about:last-child{
+    margin-bottom: 50px;
+  }
+
   /* Projects */
   .project_info_image>img{
     width: 350px;
     height: 250px;
-    margin: 0px auto 1em;
+    margin: 0px auto 1rem;
   }
 
   .project_info>h3{
-    font-size: 1.6em;
+    font-size: 1.6rem;
   }
 
   .project_stack_item{
@@ -500,12 +478,6 @@ html,body{
   }
 }
 
-@media only screen and (min-width: 517px){
-  .empty{
-    display:none;
-  }
-}
-
 @media only screen and (min-width: 576px){
   /* Nav */
   .main-nav-link>a{
@@ -520,24 +492,29 @@ html,body{
 
   .about{
     margin: 1.5% 5%;
-    font-size: 1.4em;
+    font-size: 1.4rem;
   }
 
   .headshot{
     width: 200px;
     height: 200px;
-    margin: 1em auto;
+    margin: 1rem auto;
 
   }
 
   .h1_name{
     margin: 0 auto;
-    font-size: 2.3em;
+    font-size: 2.3rem;
+  }
+
+  .h1_intro{
+    margin: 15px auto 5px;
+    font-size: 3.5rem;
   }
 
   /* projects*/
   .work_title{
-    font-size: 2.3em;
+    font-size: 2.3rem;
   }
   
   .work>h2{
@@ -559,12 +536,12 @@ html,body{
   }
 
   .open_title{
-    font-size: 2.3em;
+    font-size: 2.3rem;
   }
 
   /* contact */
   .contact_title{
-    font-size: 2.3em;
+    font-size: 2.3rem;
   }
 
   .contact_container{
@@ -578,9 +555,8 @@ html,body{
 }
 
 @media only screen and (min-width: 610px){
-  .skills_container{
-    margin: 0 auto;
-    width: 583px;
+  .about_me_container{
+    padding: 100px 0 70px;
   }
   
   /*contact form*/
@@ -591,7 +567,7 @@ html,body{
 
 @media only screen and (min-width: 650px){
   .about{
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 
   .work>h2{
@@ -626,25 +602,30 @@ html,body{
   }
 
   .contact_title{
-    font-size: 2.3em;
+    font-size: 2.3rem;
   }
 
   .contact_email{
-    font-size: 1.4em;
+    font-size: 1.4rem;
     margin: 0 4% 10px;
   }
 
   .contact_link_or{
-    font-size: 1.2em;
+    font-size: 1.2rem;
   }
 
   .contact_link_description{
-    margin: 10px 4% 0;
-    font-size: 1.4em;
+    margin: 10px 4% 40px;
+    font-size: 1.4rem;
   }
+
+  .top_link{
+    margin: 15px auto 0;
+  }
+
 }
 
-@media only screen and (min-width: 900px){
+@media only screen and (min-width: 905px){
   /*header intro*/
   .about_container{
     width: 90%;
@@ -660,16 +641,21 @@ html,body{
     width: 60%;
   }
 
+  .headshot{
+    margin: 1rem auto 2rem;
+  }
+
   .h1_name{
-    margin: 10px auto 35px;
+    margin: 10px auto 30px;
   }
 
   .h1_intro{
-    font-size: 1.8em;
+    font-size: 3.5rem;
+    margin: 0 auto 15px;
   }
 
   .about{
-    font-size: 1.45em;
+    font-size: 1.45rem;
   }
 
   .hide_small{
@@ -691,7 +677,7 @@ html,body{
 @media only screen and (min-width: 1000px){
   /* About */
   .about{
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 
   /*Projects*/
@@ -730,17 +716,11 @@ html,body{
 
   .project_description{
     margin: 20px 40px 10px 10px;
-    font-size: 1.1em;
+    font-size: 1.1rem;
   }
 
   .project_links>ul>li{
     margin: 0 10px;
-  }
-}
-
-@media only screen and (min-width: 1020px){
-  .skills_container{
-    width: initial;
   }
 }
 
@@ -752,7 +732,7 @@ html,body{
 
 @media only screen and (min-width: 1100px){
   .about{
-    font-size: 1.6em;
+    font-size: 1.6rem;
   }
 }
 
@@ -763,11 +743,7 @@ html,body{
   }
 
   .h1_name{
-    font-size: 2.5em;
-  }
-
-  .h1_intro{
-    font-size: 2em;
+    font-size: 2.5rem;
   }
 
   /* Project */
@@ -787,62 +763,62 @@ html,body{
   }
 
   .project_stack_item>p{
-    font-size: 0.8em;
+    font-size: 0.8rem;
   }
 
   .project_info>h3{
-    font-size: 1.8em;
+    font-size: 1.8rem;
   }
 
   .project_description{
-    font-size: 1.3em;
+    font-size: 1.3rem;
   }
 
   .work_title{
-    font-size: 2.5em;
+    font-size: 2.5rem;
   }
 
   .open_title{
-    font-size: 2.5em;
+    font-size: 2.5rem;
   }
 
   /* Contact */
   .contact_title{
-    font-size: 2.5em;
+    font-size: 2.5rem;
   }
 
   .contact_email{
-    font-size: 1.8em;
+    font-size: 1.8rem;
   }
 
   .contact_link_or{
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 
   .contact_link_description{
-    font-size: 1.8em;
+    font-size: 1.8rem;
   }
 
   .top_link{
-    font-size: 1.6em;
+    font-size: 1.6rem;
   }
 }
 
 @media only screen and (min-width: 1300px) {
   .about{
-    /* font-size: 1.7em; */
-    font-size: 1.65em;
+    /* font-size: 1.7rem; */
+    font-size: 1.65rem;
   }
 }
 
 @media only screen and (min-width: 1400px) {
   .about{
-    font-size: 1.7em;
+    font-size: 1.7rem;
   }
 }
 
 @media only screen and (min-width: 1450px) {
   .about{
-    font-size: 1.75em;
+    font-size: 1.75rem;
   }
 }
