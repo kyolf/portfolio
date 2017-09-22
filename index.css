@@ -691,8 +691,7 @@ html,body{
 @media only screen and (min-width: 1000px){
   /* About */
   .about{
-    /* font-size: 1.5em; */
-    font-size: 1.45em;
+    font-size: 1.5em;
   }
 
   /*Projects*/
@@ -753,8 +752,7 @@ html,body{
 
 @media only screen and (min-width: 1100px){
   .about{
-    /* font-size: 1.6em; */
-    font-size: 1.5em;
+    font-size: 1.6em;
   }
 }
 
@@ -833,12 +831,12 @@ html,body{
 @media only screen and (min-width: 1300px) {
   .about{
     /* font-size: 1.7em; */
-    font-size: 1.6em;
+    font-size: 1.65em;
   }
 }
 
-@media only screen and (min-width: 1475px) {
+@media only screen and (min-width: 1400px) {
   .about{
-    font-size: 1.65em;
+    font-size: 1.75em;
   }
 }
