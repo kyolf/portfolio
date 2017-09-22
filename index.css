@@ -837,6 +837,12 @@ html,body{
 
 @media only screen and (min-width: 1400px) {
   .about{
+    font-size: 1.7em;
+  }
+}
+
+@media only screen and (min-width: 1450px) {
+  .about{
     font-size: 1.75em;
   }
 }
