@@ -507,6 +507,11 @@ html,body{
 }
 
 @media only screen and (min-width: 576px){
+  /* Nav */
+  .main-nav-link>a{
+    padding: 10px;
+  }
+
   /*header intro*/
   .about_container{
     margin: 0 auto;
@@ -600,6 +605,16 @@ html,body{
 }
 
 @media only screen and (min-width: 820px){
+  /* Nav */
+  .main-nav-link>a{
+    font-size: 20px;
+  }
+
+  /* Intro */
+  .h1_name{
+    margin: 10px auto 0;
+  }
+
   /*Projects*/
   .project{
     width: 100%;
