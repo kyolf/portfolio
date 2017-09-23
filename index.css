@@ -15,6 +15,8 @@ html,body{
 .main_nav{
   position: fixed;
   width: 100%;
+  background-color: #143A45;
+  display:flex;
   /* border-bottom: 2px black solid; */
 }
 
@@ -22,9 +24,9 @@ html,body{
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
-  background-color: #143A45;
   padding: 1rem;
   margin: 0px;
+  width: 90%;
 }
 
 .main_nav_link{
@@ -37,7 +39,6 @@ html,body{
 
 .main_nav_link>a{
   text-decoration: none;
-  /* color:#355259; */
   color: #FFF;
   font-size:18px;
 }
@@ -46,16 +47,51 @@ html,body{
   color: #b9efff;
 }
 
+.home_nav_link{
+  text-decoration: none;
+  width: 30px;
+  display: flex;
+}
+
+.home_nav_link img{
+  width: 30px;
+  height: 30px;
+}
+
+.empty{
+  display: none;
+}
+
+.fav_container{
+  width: 10%;
+  margin: 11px 0 0 5%;
+}
+
+.fav_words{
+  color: #FFF;
+  font-size: 18px;
+  margin: auto 0 auto 10px;
+}
+
+.home_nav_link:hover .fav_words{
+  color: #b9efff;
+}
+
+.empty{
+  display: none;
+}
+
+.fav1:hover .empty{
+  display: block;
+  z-index: 10;
+}
+
 /* Intro */
 .h1_intro{
   margin: 0 auto 20px;
   font-size: 3rem;
   text-align: center;
   font-family: 'Titillium Web', Sans-Serif;
-}
-
-.empty{
-  display: none;
 }
 
 /* about me*/
@@ -495,12 +531,24 @@ html,body{
 
 @media only screen and (min-width: 576px){
   /* Nav */
+  .empty{
+    display: block !important;
+  }
+  
+  .home_nav_link{
+    width: 110px;
+  }
+
   .main_nav_link>a{
     padding: 10px;
   }
 
   .main_nav_link:last-child{
     margin-right: 2rem;
+  }
+
+  .fav_container{
+    margin: 11px 0 0 9%;
   }
 
   /*header intro*/
@@ -608,6 +656,15 @@ html,body{
 
 @media only screen and (min-width: 820px){
   /* Nav */
+  .fav_words{
+    font-size: 20px;
+    margin: auto 0 auto 10px;
+  }
+
+  .home_nav_link{
+    width: 121px;
+  }
+
   .main_nav_link>a{
     font-size: 20px;
   }
@@ -652,6 +709,17 @@ html,body{
 }
 
 @media only screen and (min-width: 905px){
+  /*Nav  */
+  .fav_container{
+    width: 66%;
+    margin: 11px 0 0 4.625rem;
+  }
+
+  .home_nav_link img{
+    width: 33px;
+    height: 33px;
+  }
+
   /*header intro*/
   .about_container{
     width: 90%;
