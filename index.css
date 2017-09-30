@@ -865,6 +865,10 @@ html,body{
   }
 
   /* About */
+  .about{
+    font-size: 1.66rem;
+  }
+
   .about_container{
     width: 90%;
   }
@@ -943,7 +947,7 @@ html,body{
   
   .about{
     /* font-size: 1.7rem; */
-    font-size: 1.65rem;
+    font-size: 1.75rem;
   }
 }
 
