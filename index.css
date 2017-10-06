@@ -989,4 +989,9 @@ html,body{
   .fav_container{
     margin: 11px 0 0 7.625rem;
   }  
+
+  /* Project */
+  project_info_image>img{
+    margin: 0 auto;
+  }
 }
