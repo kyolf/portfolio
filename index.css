@@ -991,7 +991,7 @@ html,body{
   }  
 
   /* Project */
-  project_info_image>img{
+  .project_info_image>img{
     margin: 0 auto;
   }
 }
