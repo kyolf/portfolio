@@ -155,6 +155,7 @@ html,body{
 
 .about > a:hover{
   color: #8cf971;
+  text-decoration: none;
 }
 
 .about:last-child{
