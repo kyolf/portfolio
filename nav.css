@@ -72,3 +72,142 @@
   display: block;
   z-index: 10;
 }
+
+@media only screen and (min-width: 383px){
+  /* Nav */
+  .main_nav_link:last-child{
+    margin-right: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 500px){
+  /* Nav */
+  .main_nav_link:last-child{
+    margin-right: 1rem;
+  }
+}
+
+@media only screen and (min-width: 576px){
+  /* Nav */
+  .empty{
+    display: block !important;
+  }
+  
+  .home_nav_link{
+    width: 110px;
+  }
+
+  .main_nav_link>a{
+    padding: 10px;
+  }
+
+  .main_nav_link:last-child{
+    margin-right: 2rem;
+  }
+
+  .fav_container{
+    margin: 11px 0 0 9%;
+  }
+}
+
+@media only screen and (min-width: 650px){
+  /* Nav */
+  .main_nav_link:last-child{
+    margin-right: 3rem;
+  }
+}
+
+@media only screen and (min-width: 820px){
+  /* Nav */
+  .fav_words{
+    font-size: 20px;
+    margin: auto 0 auto 10px;
+  }
+
+  .home_nav_link{
+    width: 121px;
+  }
+
+  .main_nav_link>a{
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 905px){
+  /*Nav  */
+  .fav_container{
+    width: 66%;
+    margin: 11px 0 0 4.625rem;
+  }
+
+  .home_nav_link img{
+    width: 33px;
+    height: 33px;
+  }
+}
+
+@media only screen and (min-width: 1010px){
+  /* Nav */
+  .main_nav_link:last-child{
+    margin-right: 3.5rem;
+  }
+
+  .fav_container{
+    margin: 11px 0 0 5.125rem;
+  }
+}
+
+@media only screen and (min-width: 1100px){
+  /* Nav */
+  .main_nav_link:last-child{
+    margin-right: 4rem;
+  }
+
+  .fav_container{
+    margin: 11px 0 0 5.625rem;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  /* Nav */
+  .main_nav_link:last-child{
+    margin-right: 4.5rem;
+  }
+
+  .fav_container{
+    margin: 11px 0 0 6.125rem;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  /* Nav */
+  .main_nav_link:last-child{
+    margin-right: 5rem;
+  }
+
+  .fav_container{
+    margin: 11px 0 0 6.625rem;
+  }  
+}
+
+@media only screen and (min-width: 1400px) {
+  /* Nav */
+  .main_nav_link:last-child{
+    margin-right: 5.5rem;
+  }
+
+  .fav_container{
+    margin: 11px 0 0 7.125rem;
+  }  
+}
+
+@media only screen and (min-width: 1500px) {
+  /* Nav */
+  .main_nav_link:last-child{
+    margin-right: 6rem;
+  }
+
+  .fav_container{
+    margin: 11px 0 0 7.625rem;
+  }  
+}
