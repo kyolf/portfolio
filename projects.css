@@ -338,7 +338,7 @@
 
 @media only screen and (min-width: 1200px){
   /* Project */
-  /* .project_info{
+  .project_info{
     width: 50%;
     margin: auto 0 auto 7%;
   }
@@ -372,19 +372,19 @@
 
   .open_title{
     font-size: 2.5rem;
-  } */
+  }
 }
 
 @media only screen and (min-width: 1300px) {
   /* Project */
-  /* .project_description{
+  .project_description{
     margin: 20px 30px 10px 10px;
-  } */
+  }
 }
 
 @media only screen and (min-width: 1500px) {
   /* Project */
-  /* .project_info_image>img{
+  .project_info_image>img{
     margin: 0 auto;
-  } */
+  }
 }
